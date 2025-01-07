@@ -19,15 +19,12 @@ Here's the expected payload format:
     <li>time: int The timestamp of the action (this value is always increasing).</li>
 </ul>
 The response should look like this:
-<ul style="list-style-type:none;">
-    <li>{</li>
-        <ul style="list-style-type:none; margin-left: 20px;"> 
-            <li>"alert": true</li>
-            <li>"alert_codes": [30, 123]</li>
-            <li>"user_id": 1,</li>
-        </ul>
-    <li>}</li>
-</ul>
+The response should look like this:
+<pre><code>{
+    "alert": true,
+    "alert_codes": [30, 123],
+    "user_id": 1,
+}</code></pre>
 
 ### Expected behaviour
 
