@@ -46,5 +46,5 @@ The response should look like this:
 </ul>
 
 <p>To test your endpoint, you can use this curl command:</p>
-curl -XPOST http://127.0.0.1:5000/event -H 'Content-Type: application/json' \
--d '{"type": "deposit", "amount": "42.00", "user_id": 1, "time": 0}'
+<code>curl -XPOST http://127.0.0.1:5000/event -H 'Content-Type: application/json' \
+-d '{"type": "deposit", "amount": "42.00", "user_id": 1, "time": 0}'</code>
