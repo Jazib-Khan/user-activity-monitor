@@ -1,21 +1,17 @@
 # user-activity-monitor
 
-## The task
+## The Task
 
 <p>Build an API endpoint called /event that receives a payload representing a user's action
 (like a deposit or withdrawal). Based on the activity in the payload, your endpoint should check against
 some predefined rules to determine if an alert should be raised.</p>
 Here's the expected payload format:
-<ul style="list-style-type:none;">
-    <li>{</li>
-        <ul style="list-style-type:none; margin-left: 20px;"> 
-            <li>"type": "deposit",</li>
-            <li>"amount": "42.00",</li>
-            <li>"user_id": 1,</li>
-            <li>"time": 10</li>
-        </ul>
-    <li>}</li>
-</ul>
+<pre><code>{
+    "type": "deposit",
+    "amount": "42.00",
+    "user_id": 1,
+    "time": 10
+}</code></pre>
 <ul>
     <li>type: str The type of user action, either deposit or withdraw .</li>
     <li>amount: str The amount of money the user is depositing or withdrawing.</li>
